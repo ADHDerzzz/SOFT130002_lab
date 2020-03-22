@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <title>知乎-注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div id="box"></div>
+    <div class="cent-box register-box">
+        <div class="cent-box-header">
+            <h1 class="main-title">知乎</h1>
+            <h2 class="sub-title">有问题 上知乎</h2>
+        </div>
+       
+        <div class="cont-main clearfix">
+            <div class="index-tab">
+                <div class="index-slide-nav">
+                    <a href="index.html">主页</a>
+                    <a href="register.html" class="active">注册</a>
+                    <div class="slide-bar slide-bar1"></div>				
+                </div>
+            </div>
+            <form action="#" method="GET">
+            <div class="login form">
+                <div class="group">
+                    <div class="group-ipt user">
+                        <input type="text" name="user"  placeholder="输入用户名" pattern="/^[\da-zA-Z_]+$/" oninvalid="setCustomValidity('用户名只能包含数字、字母和下划线');" οninput="setCustomValidity('');" required>
+                    </div>
+                    <div class="group-ipt password">
+                        <input type="text" name="password" id="password" class="ipt" placeholder="设置密码"  pattern="/^[A-Za-z0-9]+$/" οnkeyup="compare();"  minlength="8" required>
+                    </div>
+                    <div class="group-ipt password1">
+                        <input type="text" name="password1" id="password1" class="ipt" placeholder="确认密码" onkeyup="compare();" required>
+                        <div id="ts"></div>
+                    </div>
+                    <div class="group-ipt address">
+                        <select name="area" style="width: 300px;height: 50px;background-color: transparent;border: 0; padding: 0 0 0 10px;">
+                            <option value="Anhui">安徽省</option>
+                            <option value="Beijing">北京市</option>
+                            <option value="Chongqing">重庆市</option>
+                            <option value="Fujian">福建省</option>
+                            <!-- 默认值为上海市 selected -->
+                            <option value="Shanghai" selected>上海市</option>
+                            <option value="Zhejiang">浙江省</option>
+                            <option value="others">其他地区</option>
+                        </select>
+                    </div>
+                    <div class="group-ipt phonenumber">
+                        <input type="phonenumber" name="phonenumber" id="phonenumber" class="ipt" placeholder="常用手机号" pattern="^1\d{10}$" oninvalid="setCustomValidity('必须填写以1开头的11位数字的手机号');" οninput="setCustomValidity('');" required>
+                    </div>
+                    <div class="group-ipt device">
+                        <input type="checkbox" name="Android" value="Android">安卓手机
+                        <input type="checkbox" name="iPhone" value="iPhone">iPhone
+                        <input type="checkbox" name="windows" value="windows">Windows
+                        <input type="checkbox" name="mac" value="mac">Mac
+                    </div>
+                    <div class="group-ipt verify">
+                        <input type="text" name="verify" id="verify" class="ipt" placeholder="输入验证码" required>
+                        <img src="../lab2/zhihu.JPG" width="70" height="43">
+                    </div>
+                    <textarea disabled="true" style="width: 300px;">欢迎您来到知乎。
+
+                            请您仔细阅读以下条款，如果您对本协议的任何条款表示异议，您可以选择不进入知乎。当您注册成功，无论是进入知乎，还是在知乎上发布任何内容（即「内容」），均意味着您（即「用户」）完全接受本协议项下的全部条款。
+                            
+                            使用规则
+                            用户注册成功后，知乎将给予每个用户一个用户帐号及相应的密码，该用户帐号和密码由用户负责保管；用户应当对以其用户帐号进行的所有活动和事件负法律责任。
+                            用户须对在知乎的注册信息的真实性、合法性、有效性承担全部责任，用户不得冒充他人；不得利用他人的名义发布任何信息；不得恶意使用注册帐号导致其他用户误认；否则知乎有权立即停止提供服务，收回其帐号并由用户独自承担由此而产生的一切法律责任。
+                            用户直接或通过各类方式（如 RSS 源和站外 API 引用等）间接使用知乎服务和数据的行为，都将被视作已无条件接受本协议全部内容；若用户对本协议的任何条款存在异议，请停止使用知乎所提供的全部服务。
+                            知乎是一个信息分享、传播及获取的平台，用户通过知乎发表的信息为公开的信息，其他第三方均可以通过知乎获取用户发表的信息，用户对任何信息的发表即认可该信息为公开的信息，并单独对此行为承担法律责任；任何用户不愿被其他第三人获知的信息都不应该在知乎上进行发表。
+                            用户承诺不得以任何方式利用知乎直接或间接从事违反中国法律以及社会公德的行为，知乎有权对违反上述承诺的内容予以删除。
+                            用户不得利用知乎服务制作、上载、复制、发布、传播或者转载如下内容：
+                            
+                            反对宪法所确定的基本原则的；
+                            危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；
+                            损害国家荣誉和利益的；
+                            煽动民族仇恨、民族歧视，破坏民族团结的；
+                            侮辱、滥用英烈形象，否定英烈事迹，美化粉饰侵略战争行为的；
+                            破坏国家宗教政策，宣扬邪教和封建迷信的；
+                            散布谣言，扰乱社会秩序，破坏社会稳定的；
+                            散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
+                            侮辱或者诽谤他人，侵害他人合法权益的；
+                            含有法律、行政法规禁止的其他内容的信息。
+                            所有用户同意遵守知乎社区管理规定（试行）和知乎视频服务协议（试行）。
+                            机构用户同意遵守知乎机构号服务协议，以及知乎机构号使用规范（试行）。
+                            知乎有权对用户使用知乎的情况进行审查和监督，如用户在使用知乎时违反任何上述规定，知乎或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户张贴的内容、暂停或终止用户使用知乎的权利）以减轻用户不当行为造成的影响。
+                    </textarea disabled="true">
+                    <input type="radio" value="agree" name="agree" required>同意
+                    <input type="radio" value="disagree" name="agree">不同意
+                </div>
+            </div>
+
+            <div class="button" style="padding-bottom: 100px;">
+                <button type="submit" class="login-btn register-btn" id="button" >注册</button>
+            </div>
+            </form>
+        </div>
+        <script>
+            function compare(){
+                var a=document.getElementById('password').value;
+                var b=document.getElementById('password1').value;
+                if(a==b){
+                    document.getElementById('ts').innerHTML="";
+                    document.getElementById("submit").disabled = false;
+                    }
+                    else{
+                        document.getElementById('ts').innerHTML="请输入相同的密码";
+                        document.getElementById("submit").disabled = true;
+            }
+            }
+            </script> 
+    </div>
+</body>
+</html>
