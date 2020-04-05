@@ -1,0 +1,117 @@
+#adapt {
+    display: block;
+    width:100%;
+    height:600px;
+
+}
+/* ====== general ====== */
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    content: "020";
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.page-width {
+    width: 980px;
+    margin: 0 auto;
+}
+/* ====== banner ====== */
+.banner-list {
+    position: relative;
+    width: 980px;
+}
+.banner-list ul {
+    margin-right: -20px;
+}
+.banner-list li {
+    overflow: hidden;
+    float: left;
+    width: 200px;
+    height: 125px;
+    margin: 0 20px 20px 0;
+    border-radius: 4px;
+}
+.banner-list li a {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 125px;
+}
+.banner-list li a img {
+    width: 100%;
+    height: 125px;
+}
+.banner-list li a .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    color: transparent;
+}
+.banner-list li a:hover .info {
+    height: 125px;
+    background: rgba(0, 0, 0, .4);
+}
+.banner-list li a .info .title {
+    overflow: hidden;
+    line-height: 45px;
+    color: transparent;
+    margin: 0 5px;
+    word-break: break-all;
+}
+.banner-list li a:hover .info .title{
+    line-height: 18px;
+    padding-top: 10px;
+    color: #fff;
+}
+.banner-list li a .info .description{
+    margin-left: 5px;
+    padding: 12px 0 10px;
+}
+.banner-list li a:hover .info .description{
+    line-height: 18px;
+    padding-top: 10px;
+    color:#99a2aa;
+}
+/*======footer======*/
+footer{
+    background-color: #333333;
+}
+.row{
+    margin-top: 30px;
+    margin-left: 110px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+/* ====== sideBar ====== */
+#sideBar {
+    position: fixed;
+    z-index: 10000;
+    right: 20px;
+    bottom: 20px;
+    top: auto;
+}
+
+.sideBar-list button {
+    width: 70px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #e5e9ef;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+.sideBar-list button:hover {
+    background-color: #00a1d6;
+}
