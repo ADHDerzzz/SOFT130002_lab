@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+<meta name="author" content="18300120031" />
+  <title>FISHER-BROWSE</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/browse.css">
+</head>
+
+<body>
+  <header id="header">
+    <div id="page_top">
+      <div class="bg-wrap">
+        <div class="bg"></div>
+        <div class="mask"></div>
+      </div>
+      <div class="header-top">
+        <div class="page-width clearfix">
+          <div class="header-top__nav">
+            <ul>
+              <li class="item">
+                <a href="index.html">HOME</a>
+              </li>
+              <li class="item"><a href="browse.html" style=" background-color: rgba(255, 255, 255, .2);">BROWSE</a></li>
+              <li class="item">
+                <a href="search.html">SEARCH</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-top__user">
+            <div class="login-box">
+              <a href="login.html">LOGIN</a>
+              <span></span>
+              <a href="register.html">REGISTER</a>
+            </div>
+            <div class="user-post">
+              <a href="#" class="link">MY ACCOUNT</a>
+              <div class="user-post__hover header-hover">
+                <a href="upload.html" class="upload">UPLOAD</a>
+                <a href="favourite.html" class="favourite">FAVOURITE</a>
+                <a href="myphoto.html" class="myphoto">MY PHOTO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </header>
+  
+  <div class="main">
+    <div class="left"> 
+
+      <div class="mainbox">
+        <div class="boxtitle"><div class="titletext">SEARCH BY TITLE</div></div>
+        <div>
+          <form>
+            <input placeholder="You can search here..." class="input_text"/>
+            <input type="button" class="search_icon" onclick="alert('搜索结果已显示')"/>
+          </form>
+        </div>
+      </div>
+
+      <div class="mainbox" style="height: 242px;">
+        <div class="boxtitle"><div class="titletext">HOT COUNTRY</div></div>
+        <table class="table_left">
+          
+          <tr><td><div>CHINA</div></td></tr>
+          <tr><td><div>JAPAN</div></td></tr>
+          <tr><td><div>ITALY</div></td></tr>
+          <tr><td><div>AMERICA</div></td></tr>
+          <tr><td><div>ENGLAND</div></td></tr>
+          <tr style="border-bottom: none;"><td><div>FRANCH</div></td></tr>
+
+        </table>
+        
+      </div>
+
+      <div class="mainbox" style="height: 172px;">
+        <div class="boxtitle"><div class="titletext">HOT CITY</div></div>
+        <table class="table_left">
+
+          <tr><td><div>SHANGHAI</div></td></tr>
+          <tr><td><div>TOKYO</div></td></tr>
+          <tr><td><div>NEW YORK</div></td></tr>
+          <tr style="border-bottom: none;"><td><div>LONDON</div></td></tr>
+
+        </table>
+        
+      </div>
+    </div>
+
+
+    <div style="float: left;">
+
+      <div class="mainbox" style="height: 755px;">
+        <div class="boxtitle">
+          <div class="titletext">FLITER</div>
+        </div>
+        <table class="table_right">
+          <tr style="height: 80px;"><td style="width: 800px;">
+              <div style="margin-top: 20px;margin-left: 20px;">
+                <div style="float: left;">
+                  <div style="float: left;">
+                    <select>
+                      <option style="display: none;">Fliter By Content</option>
+                      <option>scenery</option>
+                      <option>city</option>
+                      <option>people</option>
+                      <option>animal</option>
+                      <option>building</option>
+                      <option>wonder</option>
+                    </select>
+                  </div>
+    
+                  <div style="width:500px;float: left;">
+                    <select id="oneDiv">
+                        <option selected>Fliter By Country</option>
+                        <option id="1">China</option>
+                        <option id="2">Japan</option>
+                        <option id="3">Italy</option>
+                        <option id="4">America</option>
+                    </select>
+                    <select id="childSelect"> 
+                        <option selected>Fliter By City</option>
+                    </select>
+                </div>
+    
+                </div>
+                
+                <div style="float: left;">
+                  <button class="button" onclick="alert('图片已筛选')" style="float: left;margin-top: 0;">FLITER</button>
+                </div>
+    
+              </div>
+            </td>
+          </tr>
+          
+          
+          <tr style="height: 570px;border-bottom: none;">
+           
+            <td>
+              <div class="banner-list">
+                <ul>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/9496560520.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8152043422.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/5857398054.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/6114907897.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/5855735700.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="details.html">
+                      <img src="travel-images/normal/medium/8711645510.jpg" alt="#">
+                      <div class="info">
+                        <p class="title">TITLE</p>
+                        <p class="description">description</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+        
+              </div>
+
+            </td>
+          </tr>
+          <tr style="height: 30px;border-bottom: none;border-top: none;">
+            <td>
+              <div id="page-nav">
+                <ul>
+                  <li><a href="browse.html">&lt</a></li>
+                  <li><a href="###">1</a></li>
+                  <li><a href="###">2</a></li>
+                  <li><a href="###">3</a></li>
+                  <li><a href="###">4</a></li>
+                  <li><a href="###">5</a></li>
+                  <li><a href="browse.html">></a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <div class="block">
+        <p id="copyright">© 2020</p>
+        <img src="images/weixin.png" style="width: 80px;height: 80px;">
+      </div>
+      <div class="block">
+        <p>Features</p>
+        <ul>
+          <li>
+            <a href="###">Experience share</a>
+          </li>
+          <li>
+            <a href="###">Worldwide</a>
+          </li>
+          <li>
+            <a href="###">Integrations</a>
+          </li>
+          <li>
+            <a href="###">Photography</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="block">
+        <p>Community</p>
+        <ul>
+          <li>
+            <a href="###">Personal</a>
+          </li>
+          <li>
+            <a href="###">Open source</a>
+          </li>
+          <li>
+            <a href="###">Business</a>
+          </li>
+          <li>
+            <a href="###">Education</a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="block">
+        <p>Company</p>
+        <ul>
+          <li>
+            <a href="###">About</a>
+          </li>
+          <li>
+            <a href="###">Blog</a>
+          </li>
+          <li>
+            <a href="###">Careers</a>
+          </li>
+          <li>
+            <a href="###">Press</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block">
+        <p>Resources</h4>
+        <ul>
+          <li>
+            <a href="###">Contact FISHER</a>
+          </li>
+          <li>
+            <a href="###">Community Forum</a>
+          </li>
+          <li>
+            <a href="###">Help</a>
+          </li>
+          <li>
+            <a href="###">Status</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    var Div = document.getElementById("oneDiv");
+    Div.onchange = function () {
+        var childLinkage = document.getElementById("childSelect");
+        childLinkage.innerHTML = ""; // 每次进来先清空城市列表
+        var divValue = this.value;
+        var cities = [];
+
+        switch (divValue) {
+            case "Fliter By Country":
+                cities = ['Fliter By City']
+                break;
+            case "China":
+                cities = ['Shanghai','Kunming','Beijing','Yantai']
+                break;
+            case "Japan":
+                cities = ['Tokyo', 'Osaka', 'Kamakura']
+                break;
+            case "Italy":
+                cities = ['Roma','Milan','Venice','Florence']
+                break;
+            case "America":
+                cities = ['New York','San Francisco', 'Washington']
+                break;
+        }
+        for (var i = 0; i < cities.length; i++) {
+            var option = document.createElement('option'); //先创建option
+            var textNode = document.createTextNode(cities[i]); //再把城市名作为子节点填入，也可用innerHTML
+            option.appendChild(textNode);
+            childLinkage.appendChild(option);
+        }
+    }
+</script>
+
+</body>
+</html>
